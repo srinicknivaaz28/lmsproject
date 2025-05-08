@@ -4,12 +4,16 @@ import viteLogo from "/vite.svg";
 import "./App.css";
 import Hero from "./pages/Hero";
 import { Route, Routes } from "react-router-dom";
+import Nav from "./ui/Nav";
 
 function App() {
   return (
-    <Routes>
-      <Route path="/" element={<Hero />} />
-    </Routes>
+    <>
+      <Nav />
+      <Routes>
+        <Route path="/" element={<Hero />} />
+      </Routes>
+    </>
   );
 }
 
