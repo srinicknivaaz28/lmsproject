@@ -5,6 +5,7 @@ import "./App.css";
 import Hero from "./pages/Hero";
 import { Route, Routes } from "react-router-dom";
 import Nav from "./ui/Nav";
+import Contact from "./pages/Contact";
 
 function App() {
   return (
@@ -12,8 +13,10 @@ function App() {
       <Nav />
       <Routes>
         <Route path="/" element={<Hero />} />
+        <Route path="/contact" element={<Contact/>}/>
       </Routes>
     </>
+
   );
 }
 
