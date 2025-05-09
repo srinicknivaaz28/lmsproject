@@ -6,6 +6,7 @@ import Hero from "./pages/Hero";
 import { Route, Routes } from "react-router-dom";
 import Nav from "./ui/Nav";
 import Contact from "./pages/Contact";
+import Footer from "./ui/Footer";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route path="/" element={<Hero />} />
         <Route path="/contact" element={<Contact/>}/>
       </Routes>
+      <Footer/>
     </>
 
   );
